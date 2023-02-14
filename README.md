@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Giphy Grabber
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 It uses the Giphy API to show image results to users.
@@ -12,11 +12,18 @@ Simply paste your key on line 8 of `App.js`:
 const gf = new GiphyFetch('<API_KEY>');
 ```
 
-## Available Scripts
+## To run the project
 
-In the project directory, you can run:
+First, in the project directory, initialize the project by running: 
 
-### `npm start`
+```shell
+npm install
+```
+Then you can run:
 
-Runs the app in the development mode.\
+```shell
+npm start
+```
+
+This runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
