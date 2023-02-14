@@ -1,11 +1,11 @@
-import { Grid } from '@giphy/react-components'
+import { Grid } from '@giphy/react-components' // included for interface font :wink
 import { GiphyFetch } from '@giphy/js-fetch-api'
 import {useCallback, useEffect, useRef, useState} from "react";
 import debounce from 'lodash.debounce';
 import './App.css';
 import GiphyList from "./GiphyList";
 
-const gf = new GiphyFetch('<API_KEY>')
+const gf = new GiphyFetch('<API_KEY>');
 
 function App() {
     const [input, setInput] = useState('');
@@ -24,7 +24,7 @@ function App() {
 
     const onScroll = useCallback(() => {
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 15) {
-            const newOffset = offset + 1
+            const newOffset = offset + 1;
             debounceSearch(currentSearch, newOffset);
         }
     }, [currentSearch, debounceSearch, offset]);
@@ -67,6 +67,10 @@ function App() {
 
     return (
         <div>
+            <div>
+                <img className="giphyIcon" src="/icon.svg" />
+                <h2 className="giphyTitle">GIPHY GRABBER</h2>
+            </div>
             <div className="searchContainer">
                 <input type="text"
                        placeholder="  Search..."

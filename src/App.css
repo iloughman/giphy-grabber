@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 100px;
     padding: 1rem;
     font-family: interface;
     font-weight: 600;
@@ -15,7 +15,7 @@ body {
 }
 
 .searchContainer input {
-    width: 80%;
+    width: 100%;
     height: 40px;
     border: thin solid grey;
     border-radius: 4px;
@@ -67,4 +67,14 @@ a:hover {
     font-family: system-ui;
     font-weight: 900;
     font-size: 2rem;
+}
+
+.giphyIcon {
+    width: 160px;
+    position: absolute;
+}
+
+h2.giphyTitle {
+    padding-left: 40px;
+    padding-top: 5px;
 }
